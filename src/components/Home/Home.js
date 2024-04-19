@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import videologo1 from "../videos/videologo1.mp4";
 import { FaCode, FaTools, FaLaptopCode, FaDatabase } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import image1 from '../Images/image1.png'
 import image2 from "../Images/image2.png";
 import image3 from "../Images/image3.png";
@@ -36,12 +37,12 @@ function Home() {
             software development team and in-house products are ready to serve
             your needs. See our latest work and get in touch with us!
           </p>
-          <a
-            href="/projects"
+          <Link
+            to="/projects"
             className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             Our Works
-          </a>
+          </Link>
         </div>
         <div className="max-w-1/2">
           <video autoPlay muted loop className="w-[105rem] center rounded-lg">
