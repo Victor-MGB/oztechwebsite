@@ -34,9 +34,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex gap-2 text-lg text-center  leading-normal rounded-lg font-medium font-montserrat max-lg:hidden wide:mr-24">
-            <a href="/contact" className="">
+            <Link to="/contact" className="">
               Explore now
-            </a>
+            </Link>
           </div>
           <div
             className="hidden max-lg:block cursor-pointer"
