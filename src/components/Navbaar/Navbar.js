@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import logo11 from  '../Images/logo11.jpeg'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
@@ -23,12 +24,12 @@ const Navbar = () => {
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
             {navLinks.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="font-montserrat leading-normal font-bold hover:text-blue-500 uppercase text-lg text-slate-gray"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -61,12 +62,12 @@ const Navbar = () => {
             <ul className=" lg:hidden flex flex-col items-center justify-center h-full ">
               {navLinks.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="font-montserrat font-bold hover:text-blue-500 leading-normal text-lg text-slate-gray"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
