@@ -1,5 +1,7 @@
 import React from 'react'
 import Footer from '../Footer/Footer';
+import { Link } from "react-router-dom";
+
 
 function HomeIdea() {
   return (
@@ -12,12 +14,12 @@ function HomeIdea() {
           <p className="text-lg md:text-xl mb-8">
             Let's Turn Your Ideas Into Valuable Products
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
 
